@@ -1,7 +1,7 @@
 package controlflow;
 import java.util.Scanner;
 
-public class lesson06_if_statements {
+public class lesson07_if_statements {
     public static void main(String[] args){
 
         // if statement = performs a block of code if its condition is true

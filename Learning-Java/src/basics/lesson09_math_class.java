@@ -1,9 +1,8 @@
-package advanced;
-import jdk.jshell.EvalException;
+package basics;
 
 import java.util.Scanner;
 
-public class lesson10_math_class {
+public class lesson09_math_class {
     public static void main(String[] args) {
 
         // circumference = 2 * Math.PI * radius;

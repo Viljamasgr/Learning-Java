@@ -1,6 +1,6 @@
 package basics;
 
-public class lesson09_printf {
+public class lesson10_printf {
     public static void main(String[] args) {
 
         // printf() = is a method used to format output
