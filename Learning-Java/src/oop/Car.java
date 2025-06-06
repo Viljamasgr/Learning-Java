@@ -1,6 +1,6 @@
 package oop;
 
-public class Car {
+public class Car extends Vehicle{
 
     String make;
     String model;
@@ -8,6 +8,27 @@ public class Car {
     int year;
     double price;
     boolean isRunning = false;
+
+    @Override
+    void go(){
+        System.out.println("You drive the car.");
+    }
+
+    Car(String model, String color, int price){
+        this.model = model;
+        this.color = color;
+        this.price = price;
+    }
+
+    String getModel(){
+        return this.model;
+    }
+    String getColor(){
+        return this.color;
+    }
+    double getPrice(){
+        return this.price;
+    }
 
     // Default constructor (for lesson39_oop_basics)
     public Car() {
@@ -18,13 +39,22 @@ public class Car {
         this.price = 58000.99;
     }
 
-    // Parameterized constructor (for lesson42_array_of_objects)
+    // Constructor with model and color only (for lesson42_array_of_objects)
     public Car(String model, String color) {
-        this.make = "Ford"; // Default make, or you can allow it to be set
+        this.make = "Ford"; // Default make
         this.model = model;
         this.color = color;
         this.year = 2025;
         this.price = 58000.99;
+    }
+
+    // Full constructor (for lesson47_toString)
+    public Car(String make, String model, int year, String color) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.color = color;
+        this.price = 58000.99; // Default price
     }
 
     void start() {
@@ -43,5 +73,10 @@ public class Car {
 
     void brake() {
         System.out.println("You brake the " + model);
+    }
+
+    @Override
+    public String toString() {
+        return make + " " + model + " (" + year + "), Color: " + color + ", Price: $" + price;
     }
 }
