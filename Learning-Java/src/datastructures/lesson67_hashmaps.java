@@ -21,8 +21,11 @@ public class lesson67_hashmaps {
         //System.out.println(map.get("coconut"));
         //System.out.println(map.containsKey("pineapple"));
         //System.out.println(map.containsValue(1.00));
-        //System.out.println(map.containsKey("orang));
+        //System.out.println(map.size()));
 
-        
+        for(String key : map.keySet()){
+            System.out.println(key + " : $" + map.get(key));
+        }
+
     }
 }
